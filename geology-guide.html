@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Геология участка: руководство перед покупкой</title>
+<title>Геология участка и чек-лист проверки перед покупкой</title>
 <meta name="description" content="Полное практическое руководство: как проверить геологию, грунты и юридическую чистоту земельного участка перед покупкой в России." />
 <style>
 @font-face {
@@ -117,19 +117,8 @@ a{color:var(--bordeaux);}
 
 .frame{
   position:relative;
-  border:1px solid var(--brass);
-  outline:6px solid var(--parchment);
-  outline-offset:-13px;
-  box-shadow:0 0 0 1px var(--brass) inset, 0 18px 46px var(--shadow);
   padding:52px 58px 58px;
 }
-.frame::before,.frame::after,.frame .cnr-a,.frame .cnr-b{
-  content:"";position:absolute;width:30px;height:30px;pointer-events:none;
-}
-.frame::before{top:5px;left:5px;border-top:2px solid var(--brass);border-left:2px solid var(--brass);}
-.frame::after{top:5px;right:5px;border-top:2px solid var(--brass);border-right:2px solid var(--brass);}
-.frame .cnr-a{bottom:5px;left:5px;border-bottom:2px solid var(--brass);border-left:2px solid var(--brass);}
-.frame .cnr-b{bottom:5px;right:5px;border-bottom:2px solid var(--brass);border-right:2px solid var(--brass);}
 
 /* eyebrow / kicker */
 .kicker{
@@ -219,13 +208,6 @@ a{color:var(--bordeaux);}
   flex-wrap:wrap;
 }
 .cover-meta span{white-space:nowrap;}
-.cover-motto{
-  margin-top:22px;
-  font-size:12px;
-  letter-spacing:.3em;
-  text-transform:uppercase;
-  color:var(--brass-light);
-}
 
 /* ============ TOC ============ */
 .toc{padding:70px 0 30px;}
@@ -352,7 +334,7 @@ strong.hl{color:var(--bordeaux);}
 @media print{
   body{background:var(--parchment);}
   .wrap{max-width:none;padding:0;}
-  .frame{box-shadow:none;outline:none;border:1px solid var(--brass);padding:0 6mm;}
+  .frame{padding:0 6mm;}
   .cover{min-height:0;height:297mm;page-break-after:always;}
   .toc{page-break-after:always;}
   .chapter{page-break-before:always;padding-top:8mm;}
@@ -473,7 +455,7 @@ strong.hl{color:var(--bordeaux);}
         <textPath href="#ringTop" startOffset="50%" text-anchor="middle">ГЕОЛОГИЯ УЧАСТКА</textPath>
       </text>
       <text font-family="PT Serif, serif" font-size="10.5" letter-spacing="3" fill="#e7dcc0">
-        <textPath href="#ringBot" startOffset="50%" text-anchor="middle">MMXXVI · ПРОВЕРКА ПЕРЕД ПОКУПКОЙ</textPath>
+        <textPath href="#ringBot" startOffset="50%" text-anchor="middle">ПРОВЕРКА УЧАСТКА ПЕРЕД ПОКУПКОЙ</textPath>
       </text>
 
       <!-- laurel sprig left -->
@@ -511,21 +493,19 @@ strong.hl{color:var(--bordeaux);}
       </g>
     </svg>
 
-    <h1>Геология<br><em>участка</em></h1>
-    <p class="subtitle">Практическое руководство по проверке грунтов, гидрогеологии и юридической чистоты земли перед покупкой в России</p>
+    <h1>Геология участка<br><em>и чек-лист проверки</em><br>перед покупкой</h1>
+    <p class="subtitle">Практическое руководство и итоговый чек-лист: как проверить грунты, гидрогеологию и юридическую чистоту земли перед покупкой в России</p>
 
     <div class="cover-meta">
-      <span>Издание — июль 2026</span>
+      <span>Белоус Виктория</span>
       <span>·</span>
       <span>Для частных покупателей земли</span>
     </div>
-    <div class="cover-motto">Terra firma — прежде чем ставить подпись</div>
   </div>
 </section>
 
 <div class="wrap leaf">
 <div class="frame">
-<div class="cnr-a"></div><div class="cnr-b"></div>
 
 <!-- ============================================================ -->
 <!-- TOC -->
@@ -540,7 +520,7 @@ strong.hl{color:var(--bordeaux);}
     <li><span class="toc-num">III</span><span class="toc-text"><span class="t-title">Грунты: что скрывает земля</span><span class="t-desc">Несущая способность, пучинистость, уровень грунтовых вод</span></span></li>
     <li><span class="toc-num">IV</span><span class="toc-text"><span class="t-title">Инженерно-геологические изыскания</span><span class="t-desc">Кто, как и зачем бурит скважины на вашем участке</span></span></li>
     <li><span class="toc-num">V</span><span class="toc-text"><span class="t-title">Радиационная безопасность и радон</span><span class="t-desc">Нормативы, признаки радоноопасности, измерение</span></span></li>
-    <li><span class="toc-num">VI</span><span class="toc-text"><span class="t-title">Полевой осмотр участка</span><span class="t-desc">Что можно увидеть своими глазами за один выезд</span></span></li>
+    <li><span class="toc-num">VI</span><span class="toc-text"><span class="t-title">Полевой осмотр участка</span><span class="t-desc">Границы, коммуникации и что видно своими глазами</span></span></li>
     <li><span class="toc-num">VII</span><span class="toc-text"><span class="t-title">Красные флаги</span><span class="t-desc">Когда разумнее отказаться от сделки</span></span></li>
     <li><span class="toc-num">VIII</span><span class="toc-text"><span class="t-title">Итоговый чек-лист покупателя</span><span class="t-desc">Документы и геология — единым списком</span></span></li>
   </ol>
@@ -585,17 +565,26 @@ strong.hl{color:var(--bordeaux);}
   <h3><span class="n">1.3</span>Категория земель и вид разрешённого использования</h3>
   <p>Категория определяет, для какой сферы вообще предназначена земля, а вид разрешённого использования (ВРИ) — что именно на ней можно построить. Смена того или другого — это отдельная, не всегда быстрая процедура, поэтому лучше сразу подбирать участок под свою цель, а не полагаться на «потом переведём».</p>
 
+  <p>Из 158 видов разрешённого использования в классификаторе Минэкономразвития под постройку жилого дома реально подходят три: <strong class="hl">ДНП</strong>, <strong class="hl">СНТ</strong> и <strong class="hl">ИЖС</strong>. У каждого — свои условия по обязательности строительства, регистрации и подключению к городским сетям.</p>
+
   <div class="table-scroll">
   <table>
-    <caption>Таблица 1. Основные статусы участков для частного строительства</caption>
-    <thead><tr><th>Статус</th><th>Где расположен</th><th>Что можно построить</th><th>Регистрация проживания</th></tr></thead>
+    <caption>Таблица 1. Три вида разрешённого использования для жилого строительства</caption>
+    <thead><tr><th>Показатель</th><th>ДНП</th><th>СНТ</th><th>ИЖС</th></tr></thead>
     <tbody>
-      <tr><td><strong>ИЖС</strong></td><td>Только земли населённых пунктов</td><td>Жилой дом до 3 этажей (не выше 20 м)</td><td>Да, с полным адресом</td></tr>
-      <tr><td><strong>ЛПХ приусадебный</strong></td><td>В границах населённого пункта</td><td>Жилой дом, хозпостройки</td><td>Да</td></tr>
-      <tr><td><strong>ЛПХ полевой</strong></td><td>Вне границ населённого пункта</td><td>Строительство запрещено — только сельхозобработка</td><td>Нет</td></tr>
-      <tr><td><strong>Садоводство (СНТ)</strong></td><td>Земли сельхозназначения</td><td>Жилой дом (с 2019 года — с правом регистрации по суду/уведомлению)</td><td>Возможна, с ограничениями</td></tr>
+      <tr><td><strong>Описание</strong></td><td>Для дачного строительства</td><td>Для ведения садоводства</td><td>Для индивидуального жилищного строительства</td></tr>
+      <tr><td><strong>Строительство жилого дома</strong></td><td>Разрешено, но необязательно</td><td>Разрешено, но необязательно</td><td class="risk-high">Обязательно</td></tr>
+      <tr><td><strong>Постоянная регистрация</strong></td><td class="risk-low">Да</td><td class="risk-low">Да</td><td class="risk-low">Да</td></tr>
+      <tr><td><strong>Городские коммуникации</strong></td><td>Не всегда</td><td>Не всегда</td><td class="risk-low">Всегда</td></tr>
+      <tr><td><strong>Коммунальные платежи</strong></td><td>Устанавливает УК</td><td>Устанавливает УК</td><td>По общегородским тарифам или тарифам УК</td></tr>
+      <tr><td><strong>Земельный налог</strong></td><td class="risk-low">Ниже, чем у ИЖС</td><td class="risk-low">Ниже, чем у ИЖС</td><td>—</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="callout tip">
+    <span class="c-label">Важный нюанс про ДНП</span>
+    <p>С 2019 года, после вступления в силу 217-ФЗ, статус «дачное некоммерческое партнёрство» как отдельная правовая форма упразднён — все ДНП подлежат преобразованию в СНТ. Участок с пометкой «ДНП» в объявлении почти всегда юридически уже является садовым (СНТ) — уточните это в уставе товарищества и в выписке ЕГРН.</p>
   </div>
 
   <h3><span class="n">1.4</span>Зоны с особыми условиями использования территорий (ЗОУИТ)</h3>
@@ -923,15 +912,29 @@ strong.hl{color:var(--bordeaux);}
 
   <p>Планируйте осмотр не только в сухую солнечную погоду: участок, идеальный в июле, может показать совсем другую картину после нескольких дней дождя. Если есть возможность, стоит побывать на участке дважды — в разные сезоны или хотя бы в разную погоду.</p>
 
+  <h3><span class="n">6.1</span>Убедитесь, что вы на своём участке</h3>
+  <p>Перед тем как оценивать рельеф и грунт, стоит подтвердить, что вы физически стоите именно на том участке, который указан в документах. Проще всего это сделать через мобильное приложение «Kadastr.ru»: откройте поиск по геопозиции (значок лупы), сравните отмеченный на карте кадастровый номер с номером в документах продавца. Точные границы устанавливают только геодезисты, но при первичном осмотре ориентируйтесь на колышки и межевые заборы; если меток нет — попросите продавца показать примерные границы рулеткой относительно соседних участков.</p>
+
+  <h3><span class="n">6.2</span>Технические возможности участка</h3>
+  <p>Наличие и удалённость сетей напрямую влияют на бюджет освоения участка сверх стоимости самой земли.</p>
   <ul class="checklist">
-    <li><span class="box"></span><div><strong>Рельеф и уклон.</strong> Куда стекает вода после дождя — к дому или от дома; есть ли естественные понижения, которые могут стать «карманами» подтопления.</div></li>
-    <li><span class="box"></span><div><strong>Растительность-индикатор.</strong> Камыш, осока, ольха и мох на возвышенных местах — признак высокого УГВ или заболоченности; сухолюбивые сосны на песчаном пригорке — обычно хороший знак.</div></li>
+    <li><span class="box"></span><div><strong>Электричество.</strong> Если в посёлке уже установлены столбы, достаточно подать заявку в местную энергосеть на технические условия подключения.</div></li>
+    <li><span class="box"></span><div><strong>Вода.</strong> При отсутствии централизованного водоснабжения уточните глубину залегания воды — если она не превышает 30 метров, бурение скважины обойдётся недорого.</div></li>
+    <li><span class="box"></span><div><strong>Газ.</strong> Оптимально, если труба уже выведена на участок. Если она проходит только по улице, добавятся расходы на проектирование и строительство газопровода до участка.</div></li>
+    <li><span class="box"></span><div><strong>Канализация.</strong> Отсутствие централизованной канализации не критично — септик или локальные очистные сооружения решают вопрос без сложных согласований.</div></li>
+  </ul>
+
+  <h3><span class="n">6.3</span>Что смотреть на местности</h3>
+  <ul class="checklist">
+    <li><span class="box"></span><div><strong>Рельеф и уклон.</strong> Куда стекает вода после дождя — к дому или от дома; есть ли естественные понижения, которые могут стать «карманами» подтопления. Оцените ровность участка — выравнивание может повлечь дополнительные затраты.</div></li>
+    <li><span class="box"></span><div><strong>Растительность-индикатор.</strong> Камыш, ивняк, осока, ольха и мох на возвышенных местах — признак высокого УГВ или заболоченности; сухолюбивые сосны на песчаном пригорке — обычно хороший знак.</div></li>
     <li><span class="box"></span><div><strong>Состояние соседних построек.</strong> Трещины по цоколю и стенам, отклонение от вертикали, следы ремонта фундамента — сигнал о проблемном грунте в округе.</div></li>
+    <li><span class="box"></span><div><strong>Отступы и соседство.</strong> Проверьте расстояние от соседних строений до границы (норматив — от 5 м до дома соседа, от 10 м для деревянных построек), не стекает ли вода или снег с чужой крыши на ваш участок, и как соседние здания затеняют участок в течение дня.</div></li>
     <li><span class="box"></span><div><strong>Колодцы и скважины поблизости.</strong> Соседи часто точно знают глубину залегания воды и её сезонные колебания — это ценнее любого объявления.</div></li>
     <li><span class="box"></span><div><strong>Следы эрозии и оврагов.</strong> Свежие промоины, оголённые корни деревьев на склоне, следы оползания грунта у откосов.</div></li>
     <li><span class="box"></span><div><strong>Насыпной грунт.</strong> Явная разница в цвете и структуре земли на разных частях участка, остатки строительного мусора на поверхности.</div></li>
     <li><span class="box"></span><div><strong>Запах и застой воды.</strong> Стойкий сырой запах и лужи, не высыхающие через день-два после дождя.</div></li>
-    <li><span class="box"></span><div><strong>Подъездные пути и коммуникации.</strong> Не относится напрямую к геологии, но определяет, во сколько обойдётся освоение участка сверх стоимости земли.</div></li>
+    <li><span class="box"></span><div><strong>Расположение в посёлке.</strong> Сверьтесь с генеральным планом посёлка — насколько удобно участок расположен относительно охраны, детской площадки и подъездных путей.</div></li>
   </ul>
 </section>
 
@@ -1054,7 +1057,7 @@ strong.hl{color:var(--bordeaux);}
 
 <div class="colophon">
   <span class="mark">❦</span>
-  Геология участка · Издание июль MMXXVI · Составлено для частных покупателей земли в России
+  Геология участка и чек-лист проверки перед покупкой · Составитель — Белоус Виктория
 </div>
 
 </div>
